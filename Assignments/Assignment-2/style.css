@@ -1,0 +1,117 @@
+#second{
+    color:violet;
+}
+#third{
+    color: indigo;
+}
+#fourth{
+    color: blue;
+}
+#fifth{
+    color: green;
+}
+
+#first{
+    margin-top: 12%;
+}
+#fst{
+    margin: 10%;
+}
+#sec{
+color: rgb(243, 143, 55);
+}
+#sec{
+    margin:17%;
+}
+#thrd{
+    color: rgb(164, 128, 128),
+}
+#thrd{
+    margin:16.6%
+}
+#frth{
+    color:rgb(57, 7, 7)
+}
+#frth{
+    margin: 18% ;
+}
+#ffth{
+    color: rgb(55, 6, 6)
+}
+#ffth{
+    margin:17%;
+}
+#secc{
+    color:#555 ;
+}
+#thrdd{
+    color:#101010;
+}
+#frthh{
+    color: #aaa;
+}
+#frthh{
+    margin: -1.5%;
+}
+#ffthh{
+    color: #ccc;
+}
+#ffthh{
+    margin: -0.5%;
+}
+#eighth{
+    line-height: 5ch;
+}
+#ninth{
+    font-size: larger;
+}
+#tenth{
+    color: blue;
+}
+#eleventh{
+    font-weight: bold;
+}
+#twelvth{
+    font-style: italic ;
+}
+body{
+    background-color: blanchedalmond;
+    background-image: url(hii.webp);
+    background-position: 0%;
+}
+#fstt{
+    margin: 10%;
+}
+#seccc{
+    margin: 20%;
+}
+#seccc{
+    color: rgba(200, 30,80, 100);
+}
+#thrddd{
+    margin: 20%;  
+}
+#thrddd{
+    color: rgba(2, 300,80, 150);
+}
+#frthhh{
+    margin: 21%;
+}
+#frthhh{
+    color: rgba(200, 300,800, 100);
+}
+#ffthhh{
+    margin: 20%;
+}
+#ffthhh{
+    color: rgba(500, 300,80, 100);
+}
+#main1{
+    text-align: center;
+}
+#main1{
+    margin: 10%;
+}
+#two{
+    margin-left: 14%;
+}
