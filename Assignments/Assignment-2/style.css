@@ -115,3 +115,7 @@ body{
 #two{
     margin-left: 14%;
 }
+body{
+    border:100px;
+    border-color: red;
+}
