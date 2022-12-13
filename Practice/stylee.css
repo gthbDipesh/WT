@@ -1,0 +1,62 @@
+body{
+    border: 3px solid black;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 0.5% 25% ;
+}
+.ball-1st{
+    border: 2px solid black;
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+}
+#first-box{
+    border: 3px solid black;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 8%;
+
+}
+#second-box{
+    border: 3px solid black;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: 10%;
+}
+#third-box{
+    border: 3px solid black;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 12%;
+}
+#fourth-box{
+    border: 3px solid black;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 15%;
+}
+.top-left{
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+.bottom-left{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+.top-right{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+.bottom-right{
+    position: absolute;
+    bottom:0px;
+    right:0px;
+}

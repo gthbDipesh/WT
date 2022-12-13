@@ -1,0 +1,27 @@
+nav{
+    float: right;
+    display: flex;
+    align-items: center;
+
+}
+img{
+    height: 38px;
+    margin-right: 8px;
+    margin-top: 20px;
+   border-radius: 50%;
+}
+.text-format{
+   padding-left: 10px;
+   text-decoration: none;
+   cursor:pointer;
+   margin-top: 20px;
+   padding-left: 8px;
+   padding-right: 8px;
+}
+.text-format:hover{
+    text-decoration: underline;
+}
+section{
+    display: flex;
+    font-size: larger;
+}
