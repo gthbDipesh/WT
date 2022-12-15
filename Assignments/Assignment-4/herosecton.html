@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        h1{
+            margin-left: 20px;
+        }
+       ul{
+        position:absolute;
+        top: 345px;
+        left: 20px;
+        list-style-type: none;
+       }
+       .paraa{
+        position: absolute;
+        font-size: 60px;
+       }
+       li::before{
+        content: "✓";
+        color: blue;
+        border: 2px solid blue;
+        border-radius: 50px;
+        padding:1.1px 3px;
+        position: relative;
+        right: 30px;
+       }
+       p{
+        left:351px;
+         bottom: 94px;
+         float: left;
+         margin: 50px;
+         position: relative;
+
+       }
+
+       .button-wrapper {
+            position: relative;
+            top: 390px;
+        }
+        button{
+        background-color: #ffffff;
+        border: 2px solid #ecedf0;
+        position: relative;
+        left: 0px;
+        bottom:51px;
+        padding: 10px 15px;
+        border-radius: 4px;
+
+       }
+      
+
+.out-button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 19px 19px;
+  background: black;
+  color: lightblue;
+}
+
+.inn-button {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  height: 24px;
+  left: 20px;
+  color: lightcyan;
+  background-color: darkblue;
+}
+    </style>
+</head>
+<body>
+    <h1>Brand</h1>
+    <p>Home</p>
+    <p>Components</p>
+    <p>Pricing</p>
+    <p>FAQ</p>
+    <button>Contact US</button>
+    <h1 class="paraa">Easiest way to create <br> your website</h1>
+    <ul>
+        <li>Clean and Simple Layout</li><br>
+        <li>Just Copy Paste Codeing</li><br>
+        <li>Easy to use</li>
+    </ul>
+    <div>
+        <div class="button-wrapper">
+          <button class="out-button">
+                Enter your email address
+              </button>
+          <button class="in-button">
+                Join us
+              </button>
+        </div>
+    </div>    
+</html>
