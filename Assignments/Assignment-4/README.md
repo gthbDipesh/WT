@@ -2,10 +2,10 @@
  ## Topic:-HTML and CSS
  Objective:-As shown in the figure below, design :
 
-[ ](./Assets/404.png )<br>
-[](./Assets/cta.png)<br>
-[](./Assets/hero.png)<br>
-[](./Assets/nav.png)<br>
+[!h404](./ Assets/404.png)<br>
+[!hro](./Assets/cta.png)<br>
+[!abc](./Assets/hero.png)<br>
+[!bar](./Assets/nav.png)<br>
 
 
 
