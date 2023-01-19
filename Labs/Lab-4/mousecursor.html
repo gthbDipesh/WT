@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mouse Cursor</title>
+    <style>
+      body {
+        background-color: rgb(100, 32, 200);
+      }
+      div{
+        height: 299px;
+        width: 299px;
+        border: 2.1px solid white;
+      }
+      div#bx1 {
+        background-color: red;
+        position: absolute;
+        top: 58px;
+        left: 58px;
+      }
+      div#bx2 {
+        background-color: yellowgreen;
+        position: absolute;
+        top: 119px;
+        left: 120px;
+      }
+      div#bx3 {
+        background-color: pink;
+        position: absolute;
+        top: 181px;
+        left: 181px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bx1" onclick="doThis('box1','box2','box3')"></div>
+    <div id="bx2" onclick="doThis('box2','box3','box1')"></div>
+    <div id="bx3" onclick="doThis('box3','box2','box1')"></div>
+    <script>
+      function doThis(a, b, c) {
+        document.getElementById(a).style.zIndex = "10";
+        document.getElementById(b).style.zIndex = "0";
+        document.getElementById(c).style.zIndex = "0";
+      }
+      let element;
+      const divs = document.querySelectorAll("div");
+        
+      for (el of divs) {
+        el.addEventListener("mousedown", grab, true);
+      }
+        function grab(event) {
+        element = event.currentTarget;
+        document.addEventListener("mousemove", mover, true);
+        document.addEventListener("mouseup", droper, true);
+      }
+        function mover(event) {
+        element.style.left = event.clientX + "px";
+        element.style.top = event.clientY + "px";
+      }
+        function droper(event) {
+        document.removeEventListener("mousemove", mover, true);
+        document.removeEventListener("mouseup", droper, true);
+      }
+    </script>
+  </body>
+</html>

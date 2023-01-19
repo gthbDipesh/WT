@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial</title>
+    <style>
+        body {
+        background-color: rgb(100, 30, 200);
+      }
+      #m1{
+        color: green;
+        position: absolute;
+        top: 200px;
+        left: 400px;
+      }
+      #me {
+        position: absolute;
+        top: 99px;
+        left: 501px;
+      }
+      #r1{
+        color: gold;
+        position: absolute;
+        top: 151px;
+        left: 401px;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="me">"RESULT"</button>
+    <h1 id="r1"></h1>
+    <h2 id="m1"></h2>
+    <script>
+      let num = 0,
+        fact = 0;
+      num = prompt("Enter NO:");
+      alert("Click button for Factorial");
+      fact =1;
+      for (let i = num; i > 0; i--) {
+        fact *=i;
+      }
+      document.getElementById("me").addEventListener("click", () => {
+        document.getElementById("r1").textContent =
+          "The factorial is:- " + fact;
+        document.getElementById("m1").textContent =
+          "Reload for Another Number!";
+      });
+    </script>
+  </body>
+</html>

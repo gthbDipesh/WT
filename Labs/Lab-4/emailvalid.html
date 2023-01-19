@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email & Password Validation!!</title>
+    <style>
+      body {
+        background-color: rgb(100, 30, 200);
+      }
+      fieldset {
+        height: 151px;
+        width: 251px;
+        background-color: rgb(100, 200, 300);
+        margin: auto;
+        margin-top: 301px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="action.php">
+      <fieldset>
+        <label for="email">Enter Email:</label>
+        <input type="email" id="mail" /><br /><br />
+        <label for="passw">Enter Passcode:</label>
+        <input type="password" id="pw" />
+        <br /><br />
+        <input type="button" value="submit" id="submit" />
+      </fieldset>
+    </form>
+    <script>
+      let el1 = document.getElementById("email");
+      let el2 = document.getElementById("passw");
+      document.getElementById("submit").addEventListener("click", () => {
+        val1 = el1.value;
+        let dotposition = val1.lastIndexOf(".");
+        let atposition = val1.lastIndexOf("@");
+        if (
+          el1.value== "" ||
+          el2.value== "" ||
+          atposition < 1 ||
+          dotposition < atposition + 2 ||
+          dotposition + 2 >= el1.length
+        ) {
+          alert("Form is incomplete..........");
+        } else {
+          alert("Sucessfully Submitted...... :)");
+        }
+      });
+    </script>
+  </body>
+</html>
