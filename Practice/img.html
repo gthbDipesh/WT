@@ -1,15 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Click on dog to get a bone</h1>
-<a href="https://i.pinimg.com/564x/0d/37/f6/0d37f621978762a78583188f8d54134e.jpg" target="_blank">
-   <img width="200" src="http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQOO0X7mMnoYz-e9Zdc6Pe6Wz7Ow1DcvhEiaex5aSv6QJDoCtcooqA7UUbjrphvjlIc">
-</a>
-</body>
-</html>
+<form>
+    <label for="name">Student Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+  
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address"><br><br>
+  
+    <label for="college">College:</label>
+    <input type="text" id="college" name="college"><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+  
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+  
+    <label for="subjects">Subjects:</label>
+    <select id="subjects" name="subjects" multiple>
+      <option value="maths">Maths</option>
+      <option value="english">English</option>
+      <option value="science">Science</option>
+      <option value="history">History</option>
+      <option value="geography">Geography</option>
+      <option value="computer">Computer Science</option>
+    </select><br><br>
+  
+    <label for="city">City/Town:</label>
+    <select id="city" name="city">
+      <option value="newyork">New York</option>
+      <option value="losangeles">Los Angeles</option>
+      <option value="chicago">Chicago</option>
+      <option value="houston">Houston</option>
+    </select><br><br>
+  
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="40"></textarea><br><br>
+  
+    <input type="button" value="Clear">
+    <input type="submit" value="Submit">
+  </form>
+  

@@ -1,24 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-    .box1{
-        border: 1px solid black;
-        height: 300px;
-        width: 300px;
-    }
-    </style>
-</head>
-<body>
-    <div>
-    <div class="box1"></div>
-    <div class="circle
-    '1"></div>
-</div>
-    
-</body>
+<html>
+  <head>
+    <script>
+      function validateForm() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        
+        if (email == "") {
+          alert("Email must be filled out");
+          return false;
+        } else if (!email.includes("@")) {
+          alert("Email must be a valid email address");
+          return false;
+        }
+
+        if (password == "") {
+          alert("Password must be filled out");
+          return false;
+        }
+
+        alert("Form submitted successfully");
+      }
+    </script>
+  </head>
+  <body>
+    <form name="myForm">
+      Email: <input type="email" id="email" required><br><br>
+      Password: <input type="password" id="password" required><br><br>
+      <input type="button" value="Submit" onclick="validateForm()">
+    </form>
+  </body>
 </html>
+
+

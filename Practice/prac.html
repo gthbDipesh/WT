@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            function validateForm(){
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if(email ==""){
+                    alert("Email must be fillled out");
+                    return false;
+                }
+                else if(!email.includes("@")){
+                    alert("Email must be a valid email address");
+                }
+            }
+        </script>
+    </head>
+</html>
